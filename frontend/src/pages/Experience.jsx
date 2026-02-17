@@ -3,28 +3,28 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
-    period: "2019 – Present",
-    title: "Full-Stack Developer & System Analyst",
+    period: "2018 – Present",
+    title: "Content creator",
     description:
-      "Designed, built, and maintained scalable systems with focus on performance, security, and user experience. Specialized in both frontend and backend development.",
+      "Designed, created, and managed engaging digital content with a strong focus on creativity, audience engagement, and brand consistency. Specialized in multimedia content production, storytelling, and optimizing content for various platforms.",
   },
   {
-    period: "2022 – Present",
-    title: "Malware Researcher & ML Engineer",
+    period: "2021 – Present",
+    title: "IOT engineer ",
     description:
-      "Focused on reverse engineering, exploit analysis, and machine learning applications in cybersecurity for threat detection and mitigation.",
+      "Focused on designing, developing, and deploying IoT systems with an emphasis on device connectivity, embedded systems, data communication, and real-time monitoring solutions.",
   },
   {
-    period: "2021 – 2022",
-    title: "Quality Assurance Specialist",
+    period: "2024 – Present",
+    title: "Ai engineer and ML engineer",
     description:
-      "Gained practical skills in test planning, performance validation, and bug tracking, enhancing attention to detail and system reliability.",
+      "Gained practical experience in designing, training, and evaluating AI models, improving system accuracy, performance, and reliability while ensuring efficient deployment and real-world applicability",
   },
   {
-    period: "2020 – Present",
-    title: "Digital Marketing & Content Creator",
+    period: "2025 – Present",
+    title: "Cyber security & Ethical hacker ",
     description:
-      "Created engaging bilingual content, educational posts, and technical videos while contributing to SEO strategy and brand promotion.",
+      "Performed security assessments, vulnerability analysis, and penetration testing to identify and mitigate potential threats, strengthening overall system security and resilience.",
   },
 ];
 
