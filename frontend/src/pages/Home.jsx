@@ -97,15 +97,15 @@ export default function Home() {
 
         {/* ============ LEFT CONTENT ============ */}
         <motion.div
-          initial={{ opacity: 0, x: -60,rotate:-20 }}
-          animate={{ opacity: 1, x: 0,rotate:0 }}
+          initial={{ opacity: 0, x: -60, rotate: -20 }}
+          animate={{ opacity: 1, x: 0, rotate: 0 }}
           transition={{ duration: 1 }}
           className="relative z-10 max-w-xl text-center md:text-left text-white"
         >
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
             <motion.span
               className="bg-gradient-to-r from-green-300 via-emerald-400 to-lime-300 bg-clip-text text-transparent inline-block"
-              initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
+              initial={{ opacity: 0, y: -35, filter: "blur(6px)" }}
               animate={{
                 opacity: 1,
                 y: 0,
@@ -143,12 +143,32 @@ export default function Home() {
           </div>
 
           {/* Description */}
-          <p className="mt-4 text-zinc-200 text-justify font-semibold leading-relaxed text-sm sm:text-base md:text-lg">
+          <motion.p
+            initial={{ opacity: 0, x: -60 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.2, ease: "easeInOut", behavior: "smooth" }}
+            className="mt-4 text-zinc-200 text-justify font-semibold leading-relaxed text-sm sm:text-base md:text-lg">
             I build intelligent, secure, and scalable web and mobile applications by combining modern software engineering, AI integration and efficient system design. I specialize in transforming complex ideas into user-friendly, high-performance digital solutions using modern web and app technologies. My focus is on developing innovative, reliable, and future-ready applications that deliver seamless user experiences and strong security.
-          </p>
+          </motion.p>
 
           {/* Buttons */}
-          <div className="mt-8 sm:mt-10 flex flex-col text-center items-center md:flex-row mb-10 gap-4 justify-center md:justify-start">
+          <motion.div
+            initial={{ opacity: 0, y: -100, filter: "blur(6px)" }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              filter: "blur(0px)",
+              backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+            }}
+            transition={{
+              duration: 0.6,
+              backgroundPosition: {
+                duration: 6,
+                repeat: Infinity,
+                ease: "easeInOut",
+              },
+            }}
+            className="mt-8 sm:mt-10 flex flex-col text-center items-center md:flex-row mb-10 gap-4 justify-center md:justify-start">
             <a href="/cv.pdf" download>
               <button
                 className="cursor-pointer group relative w-37 flex gap-1 items-center px-4 py-3 sm:px-6 sm:py-3 md:px-2 md:w-42 md:py-4 text-sm sm:text-base md:text-lg bg-green-600 text-[#f1f1f1] rounded-2xl font-semibold shadow-xl active:shadow-inner transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(34,197,94,0.6)]"
@@ -183,7 +203,7 @@ export default function Home() {
                 Contact Us
               </button>
             </Link>
-          </div>
+          </motion.div>
         </motion.div>
 
         {/* ============ PROFILE IMAGE ============ */}
