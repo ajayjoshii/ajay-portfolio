@@ -9,10 +9,10 @@ export default function Footer() {
         {/* Logo & Copyright */}
         <div className="text-center md:text-left">
           <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-blue-600 mb-2">
-            Anish Parajuli
+            Ajay Kumar Shrestha
           </h2>
           <p className="text-sm text-zinc-400">
-            © 2025 All rights reserved.
+            © 2026 All rights reserved.
           </p>
         </div>
 
@@ -34,7 +34,7 @@ export default function Footer() {
         <div className="flex gap-4 mt-4 md:mt-0">
           {/* GitHub */}
           <motion.a
-            href="https://github.com/ParajuliCoder"
+            href="https://github.com/ajayjoshii/"
             target="_blank"
             whileHover={{ scale: 1.3, rotate: 4, y: -3 }}
             className="text-zinc-400 hover:text-white transition-colors duration-300"
@@ -43,7 +43,7 @@ export default function Footer() {
           </motion.a>
 
           <motion.a
-            href="https://www.facebook.com/share/1DpyZh4jp5/"
+            href="https://www.facebook.com/ajay.shrestha.364674"
             target="_blank"
             whileHover={{ scale: 1.3, rotate: 4, y: -3 }}
             className="text-zinc-400 hover:text-red-400 transition-colors   duration-300"
@@ -53,7 +53,7 @@ export default function Footer() {
 
           {/* LinkedIn */}
           <motion.a
-            href="https://www.linkedin.com/in/anish-parajuli-9a9333398?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            href="https://www.linkedin.com/in/ajay-shrestha-126989283/"
             target="_blank"
             whileHover={{ scale: 1.3, rotate: 4, y: -3 }}
             className="text-blue-600 hover:text-blue-400 transition-colors duration-300"
@@ -63,7 +63,7 @@ export default function Footer() {
 
           {/* Twitter */}
           <motion.a
-            href="https://www.tiktok.com/@anishparajuli21?_r=1&_t=ZS-93QTCf6fYns"
+            href="https://www.tiktok.com/@ajaystha47"
             target="_blank"
             whileHover={{ scale: 1.3, y: -3 }}
             className="text-white hover:text-white transition-colors duration-300"
@@ -73,7 +73,7 @@ export default function Footer() {
 
           {/* Instagram */}
           <motion.a
-            href="https://www.instagram.com/parajuli5343?igsh=MXdxN3ltc2VtcnNmcQ=="
+            href="https://www.instagram.com/ajayjoshi139/"
             target="_blank"
             whileHover={{ scale: 1.3, y: -3 }}
             className="text-pink-500 hover:text-pink-400 transition-colors duration-300"
@@ -85,7 +85,7 @@ export default function Footer() {
 
       {/* Optional: small tagline */}
       <p className="mt-6 text-center text-zinc-500 text-sm">
-        Crafted with ❤️ by Anish Parajuli
+        Crafted with ❤️ by Ajay Kumar Shrestha
       </p>
     </footer>
   );

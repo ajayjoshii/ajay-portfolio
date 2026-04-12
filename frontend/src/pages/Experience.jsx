@@ -1,30 +1,25 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+
 const experiences = [
   {
-    period: "2018 – Present",
-    title: "Content creator",
+    period: "2018 – 2020",
+    title: "Python Developer",
     description:
-      "Designed, created, and managed engaging digital content with a strong focus on creativity, audience engagement, and brand consistency. Specialized in multimedia content production, storytelling, and optimizing content for various platforms.",
+      "Developed backend applications, automation scripts, and data processing pipelines using Python. Worked with frameworks like Flask and Django, and implemented AI/ML models for data-driven solutions.",
   },
   {
-    period: "2021 – Present",
-    title: "IOT engineer ",
+    period: "2020 – 2024",
+    title: "Java Developer",
     description:
-      "Focused on designing, developing, and deploying IoT systems with an emphasis on device connectivity, embedded systems, data communication, and real-time monitoring solutions.",
+      "Designed and developed robust server-side applications using Java and Spring Boot. Focused on scalable backend systems, RESTful APIs, object-oriented programming, and enterprise-level solutions.",
   },
   {
     period: "2024 – Present",
-    title: "Ai engineer and ML engineer",
+    title: "Full Stack Developer & AI Engineer",
     description:
-      "Gained practical experience in designing, training, and evaluating AI models, improving system accuracy, performance, and reliability while ensuring efficient deployment and real-world applicability",
-  },
-  {
-    period: "2025 – Present",
-    title: "Cyber security & Ethical hacker ",
-    description:
-      "Performed security assessments, vulnerability analysis, and penetration testing to identify and mitigate potential threats, strengthening overall system security and resilience.",
+      "Building full-stack web applications with modern frontend and backend technologies, while designing, training, and deploying AI/ML models for real-world applications, improving performance, reliability, and user experience.",
   },
 ];
 
@@ -73,7 +68,7 @@ const Experience = () => {
         <div className="relative pl-10">
 
           {/* Vertical Line */}
-          <div className="absolute left-3 top-0 h-full w-[2px] bg-gradient-to-b from-emerald-400/40 via-emerald-400/20 to-transparent" />
+          <div className="absolute left-3 top-0 h-180 w-[2px] bg-gradient-to-b from-emerald-400/40 via-emerald-400/30" />
 
           <motion.div
             variants={container}

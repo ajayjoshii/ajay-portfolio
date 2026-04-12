@@ -154,6 +154,13 @@ export default function Contact() {
   });
   const [loading, setLoading] = useState(false);
 
+  const socialLinks = [
+    { icon: "👥", url: "https://www.facebook.com/ajay.shrestha.364674" },
+    { icon: "💻", url: "https://github.com/ajayjoshii/" },
+    { icon: "🤝", url: "https://www.linkedin.com/in/ajay-shrestha-126989283/" },
+    { icon: "✨", url: "https://www.instagram.com/ajayjoshi139/" },
+  ];
+
   const handleChange = (e) =>
     setForm({ ...form, [e.target.name]: e.target.value });
 
@@ -246,23 +253,30 @@ export default function Contact() {
           >
             <h3 className="text-2xl font-semibold text-green-400">Get In Touch</h3>
 
-            <Info icon={<Mail />} text="anishparajuli704@gmail.com" highlight />
-            <Info icon={<Phone />} text="9861165413" />
-            <Info icon={<MapPin />} text="Bhaktapur, Duwakot" />
+            <Info icon={<Mail />} text="jajay7941@gmail.com" highlight />
+            <Info icon={<Phone />} text="9815898401" />
+            <Info icon={<MapPin />} text="Lokanthali,Bhaktapur" />
             <Info icon={<Briefcase />} text="Available for freelance" />
 
             <div className="flex gap-4 mt-6">
-              {["👨‍💻", "💼", "📸", "✉️"].map((icon, i) => (
-                <span
+
+              {socialLinks.map((item, i) => (
+                <a
                   key={i}
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-12 h-12 flex items-center justify-center 
-                             rounded-full border border-green-500 
-                             text-green-400 hover:bg-green-500 hover:text-black 
-                             transition-all duration-900 ease-in-out cursor-pointer"
+               rounded-full border border-green-500 
+               text-green-400 hover:bg-green-500 hover:text-black 
+               transition-all duration-900 ease-in-out cursor-pointer"
                 >
-                  {icon}
-                </span>
+                  {item.icon}
+                </a>
               ))}
+
+
+
             </div>
           </motion.div>
 
