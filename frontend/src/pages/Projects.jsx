@@ -27,7 +27,7 @@ const projects = [
     description:
       "A modern e-commerce website for a coffee shop, featuring a sleek design, responsive layout, and seamless user experience. The site allows customers to explore a variety of coffee blends, view detailed product information, and make purchases with ease. ",
     image:
-      "https://themewagon.com/wp-content/uploads/2018/10/coffieblend-1.jpg",
+      "https://preview.colorlib.com/theme/coffee/img/g1.jpg",
     tech: ["React", "Vite", "Tailwind CSS"],
     demo: "https://coffee-blend-website.netlify.app/",
     code: "https://github.com/ajayjoshii/",

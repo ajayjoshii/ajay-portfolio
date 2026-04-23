@@ -97,15 +97,15 @@ export default function Home() {
 
         {/* ============ LEFT CONTENT ============ */}
         <motion.div
-          initial={{ opacity: 0, x: -60, rotate: -20 }}
-          animate={{ opacity: 1, x: 0, rotate: 0 }}
+          initial={{ opacity: 0}}
+          animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
           className="relative z-10 max-w-xl text-center md:text-left text-white"
         >
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
             <motion.span
               className="bg-gradient-to-r from-green-300 via-emerald-400 to-lime-300 bg-clip-text text-transparent inline-block"
-              initial={{ opacity: 0, y: -35, filter: "blur(6px)" }}
+              initial={{ opacity: 0, y: -30, filter: "blur(6px)" }}
               animate={{
                 opacity: 1,
                 y: 0,
@@ -131,7 +131,7 @@ export default function Home() {
             <AnimatePresence mode="wait">
               <motion.p
                 key={roles[index]}
-                initial={{ opacity: 0, y: 20, filter: "blur(6px)" }}
+                initial={{ opacity: 0, y: -30, filter: "blur(6px)" }}
                 animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 exit={{ opacity: 0, y: -20, filter: "blur(6px)" }}
                 transition={{ duration: 0.6 }}
@@ -144,8 +144,8 @@ export default function Home() {
 
           {/* Description */}
           <motion.p
-            initial={{ opacity: 0, x: -60 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: -30, filter: "blur(6px)" }}
+            animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 1, delay: 0.2, ease: "easeInOut", behavior: "smooth" }}
             className="mt-4 text-zinc-200 text-justify font-semibold leading-relaxed text-sm sm:text-base md:text-lg">
             I build intelligent, secure, and scalable web and mobile applications by combining modern software engineering, AI integration and efficient system design. I specialize in transforming complex ideas into user-friendly, high-performance digital solutions using modern web and app technologies. My focus is on developing innovative, reliable, and future-ready applications that deliver seamless user experiences and strong security.
@@ -153,7 +153,7 @@ export default function Home() {
 
           {/* Buttons */}
           <motion.div
-            initial={{ opacity: 0, y: -100, filter: "blur(6px)" }}
+            initial={{ opacity: 0, y: 100, filter: "blur(6px)" }}
             animate={{
               opacity: 1,
               y: 0,
