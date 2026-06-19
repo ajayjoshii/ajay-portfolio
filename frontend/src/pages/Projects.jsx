@@ -53,7 +53,7 @@ const cardVariants = {
 
 const Projects = () => {
   return (
-    <section className="bg-[#0b0b0f] py-24 px-6 text-white">
+    <section className="bg-white border-t-2 border-t-gray-200 py-24 px-6 text-white">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <motion.div
@@ -84,7 +84,7 @@ const Projects = () => {
               key={index}
               variants={cardVariants}
               whileHover={{ y: -8 }}
-              className="bg-[#15151c] rounded-xl overflow-hidden shadow-lg hover:shadow-violet-500/20 transition"
+              className="bg-white text-black rounded-xl overflow-hidden shadow-lg hover:shadow-violet-500/20 transition"
             >
               {/* Image */}
               <div className="overflow-hidden">
@@ -103,7 +103,7 @@ const Projects = () => {
                   {project.title}
                 </h3>
 
-                <p className="text-gray-400 text-sm mb-4 leading-relaxed text-justify">
+                <p className="text-gray-600 text-sm mb-4 leading-relaxed text-justify">
                   {project.description}
                 </p>
 
@@ -124,7 +124,7 @@ const Projects = () => {
                   <a
                     href={project.demo}
                     target="_blank"
-                    className="flex-1 text-center text-sm px-4 py-2 rounded-lg bg-violet-600 hover:bg-violet-700 transition"
+                    className="flex-1 text-center text-sm px-4 py-2 rounded-lg bg-violet-600 text-white hover:bg-violet-700 transition"
                   >
                     View Demo
                   </a>

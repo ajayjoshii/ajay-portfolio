@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+#image{
+    position: relative;
+    top: 90px;
+    width: 100%;
+    background-image: url("imgpp.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

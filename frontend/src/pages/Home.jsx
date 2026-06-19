@@ -29,21 +29,20 @@ export default function Home() {
   return (
     <>
       {/* ================= HERO SECTION ================= */}
-      <section
+
+      <section id="image"
         className="
           relative min-h-screen overflow-hidden
           flex flex-col-reverse md:flex-row
-          items-center justify-between
+          items-center justify-between z-20
           px-6 sm:px-10 md:px-20 pt-28 sm:pt-20 lg:pt-28 gap-10 mb-0
           bg-zinc-800
         "
       >
-        {/* ===== GREEN OVERLAY (video-like glow) ===== */}
-        <div className="absolute inset-0 z-0" />
+      
+        {/* <div className="absolute inset-0 z-0" />
 
-        {/* ============ CIRCUIT BACKGROUND ============ */}
         <div className="absolute inset-0 z-0 pointer-events-none">
-          {/* Horizontal signals */}
           {[...Array(7)].map((_, i) => (
             <motion.div
               key={`h-${i}`}
@@ -58,7 +57,6 @@ export default function Home() {
             />
           ))}
 
-          {/* Vertical signals */}
           {[...Array(6)].map((_, i) => (
             <motion.div
               key={`v-${i}`}
@@ -73,7 +71,6 @@ export default function Home() {
             />
           ))}
 
-          {/* Blinking circuit nodes */}
           {[...Array(12)].map((_, i) => (
             <motion.span
               key={`n-${i}`}
@@ -93,11 +90,15 @@ export default function Home() {
               }}
             />
           ))}
-        </div>
+        </div> */}
+
+
+
+
 
         {/* ============ LEFT CONTENT ============ */}
         <motion.div
-          initial={{ opacity: 0}}
+          initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
           className="relative z-10 max-w-xl text-center md:text-left text-white"
@@ -216,7 +217,9 @@ export default function Home() {
           className="relative z-10 w-50 h-50 bottom-4 sm:w-[250px] sm:h-[250px] md:w-[380px] md:h-[380px] md:right-6 rounded-full object-cover border-4 border-green-400"
           transition={{ duration: 1, ease: "easeInOut" }}
         />
-      </section>
+
+    </section >
+
 
       <About />
       <Skills />

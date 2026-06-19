@@ -47,7 +47,7 @@ const item = {
 
 const Experience = () => {
   return (
-    <section className="bg-[#0b0b0f] py-28 px-6 text-white">
+    <section className="bg-white py-28 px-6 border-t-2 border-gray-300">
       <div className="max-w-5xl mx-auto">
 
         {/* Section Header */}
@@ -112,7 +112,7 @@ const Experience = () => {
                     p-6
                     transition
                     duration-300
-                    group-hover:bg-[#121217]
+                    group-hover:bg-white
                     group-hover:shadow-[0_0_30px_rgba(16,185,129,0.15)]
                   "
                 >

@@ -187,7 +187,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="min-h-screen px-6 md:px-20 py-22 bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-900 relative overflow-hidden pt-32"
+      className="min-h-screen px-6 md:px-20 py-22 bg-gradient-to-br bg-white relative overflow-hidden pt-32"
     >
       {/* Section Header */}
       <motion.div
@@ -257,7 +257,7 @@ export default function About() {
         ].map((card, index) => (
           <motion.div
             key={index}
-            className="bg-zinc-800 rounded-xl p-6 border border-emerald-500/20 shadow-lg shadow-emerald-400/10 hover:shadow-emerald-400/40 cursor-pointer hover:scale-105 transition-all duration-700 ease-in-out"
+            className="bg-white rounded-xl p-6 border border-emerald-500/20 shadow-lg shadow-emerald-400/10 hover:shadow-emerald-400/40 cursor-pointer hover:scale-105 transition-all duration-700 ease-in-out"
             initial="offscreen"
             whileInView="onscreen"
             viewport={{ once: true, amount: 0.3 }}
@@ -266,7 +266,7 @@ export default function About() {
           >
             {card.icon}
             <h4 className="font-bold text-xl mb-2 text-white">{card.title}</h4>
-            <p className="text-zinc-400 text-sm leading-relaxed">{card.desc}</p>
+            <p className="text-zinc-500 text-sm leading-relaxed">{card.desc}</p>
           </motion.div>
         ))}
       </div>

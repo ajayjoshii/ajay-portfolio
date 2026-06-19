@@ -467,7 +467,7 @@ export default function Skills() {
   ];
 
   return (
-    <section className="min-h-screen py-16 bg-black/90 text-zinc-200" id="skills">
+    <section className="min-h-screen py-16 bg-white text-zinc-200" id="skills">
       <div className="max-w-7xl mx-auto px-6 mt-10">
         <motion.h2
           className="text-4xl md:text-5xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-blue-600 mb-4"
@@ -490,8 +490,8 @@ export default function Skills() {
               onClick={() => setActiveCategory(cat)}
               className={`px-6 py-2 rounded-full transition-all duration-300
               ${activeCategory === cat
-                  ? "bg-emerald-400 text-black shadow-lg shadow-emerald-500/40 scale-105"
-                  : "bg-zinc-800 text-zinc-300 hover:bg-zinc-700"
+                  ? "bg-emerald-400 text-white shadow-lg shadow-emerald-500/40 scale-105"
+                  : "bg-white text-gray-600 border-2 border-gray-100 hover:bg-zinc-700 hover:text-white"
                 }`}
             >
               {cat}
@@ -504,7 +504,7 @@ export default function Skills() {
           {filteredSkills.map((skill, index) => (
             <motion.div
               key={index}
-              className="bg-zinc-800/40 backdrop-blur p-6 rounded-xl hover:scale-105 cursor-pointer border-emerald-500/30
+              className="bg-white backdrop-blur p-6 rounded-xl hover:scale-105 cursor-pointer border-emerald-800/30 border
                 shadow-[0_0_30px_rgba(16,185,129,0.15)]
                 hover:shadow-[0_0_45px_rgba(16,185,129,0.3)]
                 transition-all duration-500"
@@ -515,7 +515,7 @@ export default function Skills() {
               <div className="flex justify-between items-center mb-3">
                 <div className="flex items-center gap-4">
                   {skill.icon}
-                  <h3 className="text-xl font-semibold">{skill.title}</h3>
+                  <h3 className="text-xl text-gray-600 font-semibold">{skill.title}</h3>
                 </div>
                 <span className="text-emerald-400 font-bold text-lg">{skill.percent}%</span>
               </div>
@@ -541,11 +541,11 @@ export default function Skills() {
             {languages.map((lang, index) => (
               <motion.div
                 key={index}
-                className="flex flex-col items-center gap-2 p-4 bg-zinc-800/30 backdrop-blur rounded-lg shadow hover:scale-110 transition-transform duration-300 w-32"
+                className="flex flex-col items-center gap-2 p-4 bg-white border border-gray-200 backdrop-blur rounded-lg shadow hover:scale-110 transition-transform duration-300 w-32"
                 whileHover={{ y: -5 }}
               >
                 {lang.icon}
-                <span className="text-sm font-medium">{lang.name}</span>
+                <span className="text-sm text-black font-medium">{lang.name}</span>
                 <div className="w-full h-2 bg-zinc-700 rounded-full mt-1">
                   <div
                     className="h-2 rounded-full bg-gradient-to-r from-green-400 to-blue-500"

@@ -521,7 +521,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="min-h-screen bg-black flex items-center justify-center px-4">
+    <section className="min-h-screen bg-white border-t-2 border-gray-200 flex items-center justify-center px-4">
       <ToastContainer position="top-right" autoClose={3000} />
       <div className="md:max-w-5xl w-full mt-24 mb-10">
         <motion.h2
@@ -537,7 +537,7 @@ export default function Contact() {
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             animate={{ opacity: 1, x: 0 }}
-            className="bg-zinc-900 rounded-2xl p-8 shadow-lg"
+            className="bg-white rounded-2xl p-8 shadow-lg"
           >
             <form onSubmit={handleSubmit} className="space-y-4">
               {["name", "email", "subject"].map((field) => (
@@ -549,7 +549,7 @@ export default function Contact() {
                     value={form[field]}
                     onChange={handleChange}
                     required
-                    className="w-full mt-1 px-4 py-3 rounded-lg bg-zinc-800 text-white border border-zinc-700 focus:border-green-400 focus:ring-1 focus:ring-green-400 outline-none transition"
+                    className="w-full mt-1 px-4 py-3 rounded-lg bg-white text-gray-600 border border-zinc-700 focus:border-green-400 focus:ring-1 focus:ring-green-400 outline-none transition"
                   />
                 </div>
               ))}
@@ -562,7 +562,7 @@ export default function Contact() {
                   value={form.message}
                   onChange={handleChange}
                   required
-                  className="w-full mt-1 px-4 py-3 rounded-lg bg-zinc-800 text-white border border-zinc-700 focus:border-green-400 focus:ring-1 focus:ring-green-400 outline-none resize-none"
+                  className="w-full mt-1 px-4 py-3 rounded-lg bg-white text-white border border-zinc-700 focus:border-green-400 focus:ring-1 focus:ring-green-400 outline-none resize-none"
                 />
               </div>
 
@@ -616,7 +616,7 @@ function Info({ icon, text, highlight }) {
   return (
     <div
       className={`flex items-center gap-4 px-4 py-3 rounded-lg hover:bg-green-800 duration-900 ease-in-out ${
-        highlight ? "bg-green-900/40 text-green-400" : "bg-zinc-900"
+        highlight ? "bg-green-900 text-green-400" : "bg-white text-gray-800 border-2 border-gray-100"
       }`}
     >
       <span className="text-green-400">{icon}</span>
