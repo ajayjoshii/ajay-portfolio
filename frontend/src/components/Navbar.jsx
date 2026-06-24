@@ -18,7 +18,7 @@ export default function Navbar() {
         >
           <img
             src="/logos.png"
-            alt="Logo"
+            alt="logo"
             className="h-13 w-13 transition-transform duration-900 rounded-sm group-hover:scale-110 sm:h-12 sm:w-12 md:h-18 md:w-25 relative left-5 md:right-12
  "
           />
