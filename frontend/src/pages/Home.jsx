@@ -31,7 +31,7 @@ export default function Home() {
       {/* ================= HERO SECTION ================= */}
 
       <section id="image"
-        className="
+        className="bg-[url('/pp.png')] bg-cover
           relative min-h-screen overflow-hidden
           flex flex-col-reverse md:flex-row
           items-center justify-between z-20
