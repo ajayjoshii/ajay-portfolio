@@ -14,7 +14,7 @@ export default function Home() {
     "Full Stack Developer",
     "Python Developer",
     "App Developer",
-    "AI Engineer",
+    
   ];
 
   const [index, setIndex] = useState(0);

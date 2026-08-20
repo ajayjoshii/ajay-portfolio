@@ -384,32 +384,32 @@ export default function Skills() {
         "Building scalable server-side applications using Java, Spring Boot, and RESTful APIs.",
       icon: <FaCoffee className="text-emerald-400 w-8 h-8" />,
     },
-    {
-      title: "Robotics & Automation",
-      percent: 88,
-      category: "Backend",
-      description:
-        "Building autonomous robots capable of navigation, object detection, and manipulation using ROS1 & ROS2.",
-      icon: <FaRobot className="text-emerald-400 w-8 h-8" />,
-    },
-    {
-      title: "IoT Systems",
-      percent: 82,
-      category: "Backend",
-      description:
-        "Smart IoT solutions integrating sensors, microcontrollers, Raspberry Pi, and cloud dashboards.",
-      icon: <FaMicrochip className="text-emerald-400 w-8 h-8" />,
-    },
+    // {
+    //   title: "Robotics & Automation",
+    //   percent: 88,
+    //   category: "Backend",
+    //   description:
+    //     "Building autonomous robots capable of navigation, object detection, and manipulation using ROS1 & ROS2.",
+    //   icon: <FaRobot className="text-emerald-400 w-8 h-8" />,
+    // },
+    // {
+    //   title: "IoT Systems",
+    //   percent: 82,
+    //   category: "Backend",
+    //   description:
+    //     "Smart IoT solutions integrating sensors, microcontrollers, Raspberry Pi, and cloud dashboards.",
+    //   icon: <FaMicrochip className="text-emerald-400 w-8 h-8" />,
+    // },
 
     // ================= PYTHON SPECIFIC =================
-    {
-      title: "Python Automation",
-      percent: 90,
-      category: "Python",
-      description:
-        "Automating tasks, data processing, and pipelines using Python scripts and libraries like Pandas and Selenium.",
-      icon: <FaPython className="text-emerald-400 w-8 h-8" />,
-    },
+    // {
+    //   title: "Python Automation",
+    //   percent: 90,
+    //   category: "Python",
+    //   description:
+    //     "Automating tasks, data processing, and pipelines using Python scripts and libraries like Pandas and Selenium.",
+    //   icon: <FaPython className="text-emerald-400 w-8 h-8" />,
+    // },
     {
       title: "Python AI/ML",
       percent: 85,
