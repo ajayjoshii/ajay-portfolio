@@ -9,7 +9,7 @@ const projects = [
     image:
       "foodorderNp.jpg",
     tech: ["React", "Node.js", "Express", "MongoDB"],
-    demo: "https://online-food-ordering-system-nepal.netlify.app/",
+    demo: "https://online-ordering-eight.vercel.app",
     code: "https://github.com/ajayjoshii/",
   },
   {
