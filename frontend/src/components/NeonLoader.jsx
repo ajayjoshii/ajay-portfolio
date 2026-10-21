@@ -24,19 +24,19 @@ export default function NeonLoader({
       <div className="absolute h-40 w-40 rounded-full bg-blue-600/10 blur-3xl" />
       <div className="absolute h-40 w-40 rounded-full bg-violet-600/10 blur-3xl" />
 
-      <div className="relative w-full max-w-md rounded-2xl border border-white/[0.08] bg-[#090d1b]/90 p-8 shadow-[0_25px_80px_rgba(0,0,0,0.45)] backdrop-blur-xl sm:p-10">
+      <div className="relative w-full max-w-md rounded-2xl border border-white/8 bg-[#090d1b]/90 p-8 shadow-[0_25px_80px_rgba(0,0,0,0.45)] backdrop-blur-xl sm:p-10">
         <div className="mb-8 flex items-center justify-between">
           <span className="text-xs font-medium tracking-[0.2em] text-slate-400">
             PORTFOLIO
           </span>
 
-          <span className="rounded-full border border-white/[0.08] bg-white/[0.03] px-3 py-1 text-[10px] tracking-wider text-slate-400">
+          <span className="rounded-full border border-white/8 bg-white/3 px-3 py-1 text-[10px] tracking-wider text-slate-400">
             V1.0
           </span>
         </div>
 
         <div className="flex flex-col items-center text-center">
-          <div className="relative mb-8 flex h-44 w-44 items-center justify-center rounded-full border border-white/[0.04] bg-white/[0.015] shadow-[0_0_50px_rgba(37,99,235,0.08)]">
+          <div className="relative mb-8 flex h-44 w-44 items-center justify-center rounded-full border border-white/4 bg-white/1.5shadow-[0_0_50px_rgba(37,99,235,0.08)]">
             <div className="absolute inset-2 animate-[spin_12s_linear_infinite] rounded-full border border-dashed border-blue-400/20" />
 
             <div className="absolute h-32 w-32 rounded-full bg-blue-500/10 blur-2xl" />
