@@ -8,13 +8,17 @@ import Skills from "./Skills";
 import Contact from "./Contact";
 import Projects from "./Projects";
 import Experience from "./Experience";
+import { technologies } from "../constants/technologies";
 
-export default function Home() {
+export default function Home({
+  image = "/bpic.jpg",
+  name = "Ajay Kumar Shrestha",
+}) {
   const roles = [
     "Full Stack Developer",
     "Python Developer",
     "App Developer",
-    
+
   ];
 
   const [index, setIndex] = useState(0);
@@ -35,11 +39,11 @@ export default function Home() {
           relative min-h-screen overflow-hidden
           flex flex-col-reverse md:flex-row
           items-center justify-between z-20
-          px-6 sm:px-10 md:px-20 pt-28 sm:pt-20 lg:pt-28 gap-10 mb-0
+          px-6 sm:px-10 md:px-20 pt-28 sm:pt-20 gap-10 mb-0
           bg-zinc-800
         "
       >
-      
+
         {/* <div className="absolute inset-0 z-0" />
 
         <div className="absolute inset-0 z-0 pointer-events-none">
@@ -96,7 +100,6 @@ export default function Home() {
 
 
 
-        {/* ============ LEFT CONTENT ============ */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -105,7 +108,7 @@ export default function Home() {
         >
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
             <motion.span
-              className="bg-gradient-to-r from-green-300 via-emerald-400 to-lime-300 bg-clip-text text-transparent inline-block"
+              className="bg-linear-to-r from-green-300 via-emerald-400 to-lime-300 bg-clip-text text-transparent inline-block"
               initial={{ opacity: 0, y: -30, filter: "blur(6px)" }}
               animate={{
                 opacity: 1,
@@ -208,7 +211,7 @@ export default function Home() {
         </motion.div>
 
         {/* ============ PROFILE IMAGE ============ */}
-        <motion.img
+        {/* <motion.img
           initial={{ opacity: 0, x: 100 }}
           animate={{ scale: [1, 1.01, 1], opacity: 1, x: 0 }}
 
@@ -216,9 +219,66 @@ export default function Home() {
           alt="Ajay Kumar Shrestha"
           className="relative z-10 w-50 h-50 bottom-4 sm:w-[250px] sm:h-[250px] md:w-[380px] md:h-[380px] md:right-6 rounded-full object-cover border-4 border-green-400"
           transition={{ duration: 1, ease: "easeInOut" }}
-        />
+        /> */}
 
-    </section >
+
+
+        <section className="flex lg:relative lg:bottom-20 w-full items-center justify-center overflow-hidden bg-linear-to-br px-2 py-10 sm:px-4">
+          {/* Responsive circle container */}
+          <div className="relative aspect-square w-full lg:max-w-170 max-w-600 shrink-0 overflow-visible">
+
+            {/* Outer dashed border */}
+            <div className="absolute lg:inset-[8%] inset-[16%] rounded-full border-2 border-dashed border-slate-300/70" />
+
+            {/* Inner dashed border - farther from profile */}
+            <div className="absolute lg:inset-[16%] inset-[6%] rounded-full border border-dashed border-slate-300" />
+
+            {/* Rotating technology orbit */}
+            <div className="absolute inset-[3%] animate-orbit">
+              {technologies.map((tech) => (
+                <div
+                  key={tech.name}
+                  className="absolute -translate-x-1/2 -translate-y-1/2"
+                  style={{
+                    top: tech.top,
+                    left: tech.left,
+                  }}
+                >
+                  {/* Counter rotation keeps card upright */}
+                  <div className="animate-counter-orbit">
+                    {/* Each logo and title inside its own border */}
+                    <div className="flex lg:min-w-13 min-w-12 flex-col bg-white items-center gap-0.5 rounded-md border border-slate-300/8 p-1 shadow-sm backdrop-blur-sm transition duration-300 hover:border-sky-400 sm:min-w-[60px] sm:rounded-lg sm:px-2.5 sm:py-1">
+                      <img
+                        src={tech.logo}
+                        alt={tech.name}
+                        loading="lazy"
+                        className="h-4 w-4 object-contain sm:h-5 sm:w-5"
+                      />
+
+                      <span className="whitespace-nowrap text-center text-[8px] font-medium leading-tight text-black sm:text-[9px]">
+                        {tech.name}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Center profile image */}
+            <div className="absolute left-1/2 top-1/2 z-10 lg:h-[50%] lg:w-[50%] h-[55%] w-[55%]  -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-full">
+              <img
+                src={image}
+                alt={name}
+                className="h-full w-full object-cover object-top"
+              />
+            </div>
+
+          </div>
+        </section>
+
+
+
+      </section >
 
 
       <About />

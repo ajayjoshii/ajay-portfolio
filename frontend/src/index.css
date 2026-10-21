@@ -1,5 +1,41 @@
 @import "tailwindcss";
 
+@keyframes orbit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes counter-orbit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.animate-orbit {
+  animation: orbit 20s linear infinite;
+  transform-origin: center;
+}
+
+.animate-counter-orbit {
+  animation: counter-orbit 20s linear infinite;
+  transform-origin: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-orbit,
+  .animate-counter-orbit {
+    animation: none;
+  }
+}
+
+
 /* #image{
     position: relative;
     top: 90px;
@@ -8,3 +44,14 @@
     background-repeat: no-repeat;
     background-size: cover;
 } */
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+}

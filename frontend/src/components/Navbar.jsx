@@ -7,7 +7,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 w-full z-50 backdrop-blur border-b bg-white border-white/10 shadow-lg">
+    <nav className="fixed top-0 h-20 w-full z-50 backdrop-blur border-b bg-white border-white/10 shadow-lg">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-2">
 
         {/* Logo */}
@@ -19,7 +19,7 @@ export default function Navbar() {
           <img
             src="/logos.png"
             alt="logo"
-            className="h-13 w-13 transition-transform duration-900 rounded-sm group-hover:scale-110 sm:h-12 sm:w-12 md:h-18 md:w-25 relative left-5 md:right-12
+            className="h-13 w-13 transition-transform duration-900 rounded-sm group-hover:scale-110 sm:h-12 sm:w-12 md:h-16 md:w-25 relative left-5 md:right-12
  "
           />
           <h1 className="text-xl text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-blue-700 font-bold [text-shadow:2px_1px_0_#ef4444,-2px_-1px_0_#3b82f6] sm:text-lg md:text-xl lg:text-2xl leading-tight text-center md:text-left whitespace-nowrap

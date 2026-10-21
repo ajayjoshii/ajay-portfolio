@@ -44,7 +44,8 @@ export default function App() {
       <ScrollToTop />
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home  image="/bpic.jpg"
+        name="Ajay Kumar Shrestha" />} />
         <Route path="/about" element={<About />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<Projects />} />
