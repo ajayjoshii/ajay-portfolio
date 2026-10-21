@@ -21,7 +21,7 @@ export default function NeonLoader({
     <div className="relative flex min-h-screen w-full items-center justify-center overflow-hidden px-5 py-10 text-white">
       <div className="absolute inset-0" />
 
-      <div className="absolute left-[15%] top-[20%] h-40 w-40 rounded-full bg-blue-600/10 blur-3xl" />
+      <div className="absolute h-40 w-40 rounded-full bg-blue-600/10 blur-3xl" />
       <div className="absolute h-40 w-40 rounded-full bg-violet-600/10 blur-3xl" />
 
       <div className="relative w-full max-w-md rounded-2xl border border-white/[0.08] bg-[#090d1b]/90 p-8 shadow-[0_25px_80px_rgba(0,0,0,0.45)] backdrop-blur-xl sm:p-10">
@@ -70,7 +70,7 @@ export default function NeonLoader({
             {role}
           </p>
 
-          <div className="mt-9 w-full rounded-xl border border-white/[0.06] bg-white/[0.025] px-4 py-4 shadow-lg shadow-black/10">
+          <div className="mt-9 w-full rounded-xl border border-white/6 bg-white/2.5 px-4 py-4 shadow-lg shadow-black/10">
             <div className="flex items-center justify-center gap-3">
               <span className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan-400 opacity-50" />
@@ -82,8 +82,8 @@ export default function NeonLoader({
               </p>
             </div>
 
-            <div className="mt-4 h-px w-full overflow-hidden bg-white/[0.06]">
-              <div className="h-full w-1/3 animate-[loadingSlide_1.8s_ease-in-out_infinite] rounded-full bg-gradient-to-r from-cyan-400 via-blue-500 to-violet-500 shadow-[0_0_12px_rgba(59,130,246,0.5)]" />
+            <div className="mt-4 h-px w-full overflow-hidden bg-white/6">
+              <div className="h-full w-1/3 animate-[loadingSlide_1.8s_ease-in-out_infinite] rounded-full bg-linear-to-r from-cyan-400 via-blue-500 to-violet-500 shadow-[0_0_12px_rgba(59,130,246,0.5)]" />
             </div>
           </div>
 
