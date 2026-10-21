@@ -24,7 +24,7 @@ export default function App() {
 
   if (loading) {
     return (
-      <main className="flex min-h-screen items-center justify-center bg-[#03040a] p-6">
+      <main className="flex min-h-screen items-center justify-center p-6 bg-gray-900">
         <NeonLoader
           initials="AK"
           name="AJAY KUMAR"

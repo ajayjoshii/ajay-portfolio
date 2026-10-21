@@ -18,11 +18,11 @@ export default function NeonLoader({
   }, [duration, onComplete]);
 
   return (
-    <div className="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-[#050711] px-5 py-10 text-white">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_40%,rgba(37,69,160,0.16),transparent_65%)]" />
+    <div className="relative flex min-h-screen w-full items-center justify-center overflow-hidden px-5 py-10 text-white">
+      <div className="absolute inset-0" />
 
       <div className="absolute left-[15%] top-[20%] h-40 w-40 rounded-full bg-blue-600/10 blur-3xl" />
-      <div className="absolute bottom-[15%] right-[15%] h-40 w-40 rounded-full bg-violet-600/10 blur-3xl" />
+      <div className="absolute h-40 w-40 rounded-full bg-violet-600/10 blur-3xl" />
 
       <div className="relative w-full max-w-md rounded-2xl border border-white/[0.08] bg-[#090d1b]/90 p-8 shadow-[0_25px_80px_rgba(0,0,0,0.45)] backdrop-blur-xl sm:p-10">
         <div className="mb-8 flex items-center justify-between">
