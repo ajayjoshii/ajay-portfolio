@@ -21,38 +21,41 @@ body {
   font-family: Inter, ui-sans-serif, system-ui, sans-serif;
 }
 
-
-@keyframes orbit {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Outer logos: clockwise, slower */
+.animate-outer-orbit {
+  animation: outer-orbit 30s linear infinite;
 }
 
-@keyframes counter-orbit {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(-360deg);
-  }
+/* Inner logos: clockwise, faster */
+.animate-inner-orbit {
+  animation: inner-orbit 18s linear infinite;
 }
 
-.animate-orbit {
-  animation: orbit 30s linear infinite;
-  transform-origin: center;
+@keyframes outer-orbit {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
-.animate-counter-orbit {
-  animation: counter-orbit 30s linear infinite;
-  transform-origin: center;
+@keyframes inner-orbit {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .animate-orbit,
-  .animate-counter-orbit {
-    animation: none;
-  }
+/* Counter-rotation keeps cards upright */
+.animate-counter-outer {
+  animation: counter-outer 30s linear infinite;
+}
+
+.animate-counter-inner {
+  animation: counter-inner 18s linear infinite;
+}
+
+@keyframes counter-outer {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
+
+@keyframes counter-inner {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
 }

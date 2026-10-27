@@ -7,7 +7,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 h-20 w-full z-50 backdrop-blur border-b bg-white border-white/10 shadow-lg">
+    <nav className="fixed top-0 h-18 w-full z-50 backdrop-blur border-b bg-white border-white/10 shadow-lg">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-2">
 
         {/* Logo */}
@@ -19,7 +19,7 @@ export default function Navbar() {
           <img
             src="/logos.png"
             alt="logo"
-            className="h-13 w-13 transition-transform duration-900 rounded-sm group-hover:scale-110 sm:h-12 sm:w-12 md:h-16 md:w-25 relative left-5 md:right-12
+            className="h-14 w-14 transition-transform duration-900 rounded-sm group-hover:scale-110 sm:h-10 sm:w-12 md:h-15 md:w-17 relative left-5 md:right-12
  "
           />
           <h1 className="text-xl text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-blue-700 font-bold [text-shadow:2px_1px_0_#ef4444,-2px_-1px_0_#3b82f6] sm:text-lg md:text-xl lg:text-2xl leading-tight text-center md:text-left whitespace-nowrap
@@ -28,7 +28,7 @@ export default function Navbar() {
         </NavLink>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex items-center font-bold gap-15 text-xl relative right-15 text-white">
+        <ul className="hidden md:flex items-center font-bold gap-15 text-2 relative right-15 text-white">
           <NavItem to="/" label="Home" />
           <NavItem to="/about" label="About" />
           <NavItem to="/skills" label="Skills" />
@@ -44,7 +44,7 @@ export default function Navbar() {
 
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden text-2xl font-extrabold p-2 rounded-sm text-white bg-blue-500 text-center h-10 w-10 transition-all duration-300 ease-in-out hover:scale-110 active:scale-95  hover:shadow-[0_0_30px_rgba(50,0,80,1)]"
+          className="md:hidden text-xl font-extrabold p-2 text-white bg-blue-500 text-center transition-all duration-300 ease-in-out hover:scale-110 active:scale-95 "
         >
           {open ? <FiX /> : <FiMenu />}
         </button>
