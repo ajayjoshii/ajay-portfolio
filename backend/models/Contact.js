@@ -1,10 +1,46 @@
-const mongoose = require('mongoose');
 
-const contactSchema = new mongoose.Schema({
-  name: { type: String, required: true },
-  email: { type: String, required: true },
-  subject: { type: String, required: true },
-  message: { type: String, required: true },
-}, { timestamps: true });
+import mongoose from "mongoose";
 
-module.exports = mongoose.model('Contact', contactSchema);
+const contactSchema = new mongoose.Schema(
+  {
+    name: {
+      type: String,
+      required: true,
+      trim: true,
+      maxlength: 100,
+    },
+
+    email: {
+      type: String,
+      required: true,
+      trim: true,
+      lowercase: true,
+      maxlength: 254,
+    },
+
+    subject: {
+      type: String,
+      required: true,
+      trim: true,
+      maxlength: 200,
+    },
+
+    message: {
+      type: String,
+      required: true,
+      trim: true,
+      maxlength: 5000,
+    },
+
+    emailStatus: {
+      type: String,
+      enum: ["pending", "sent", "failed"],
+      default: "pending",
+    },
+  },
+  { timestamps: true }
+);
+
+const Contact = mongoose.model("Contact", contactSchema);
+
+export default Contact;
