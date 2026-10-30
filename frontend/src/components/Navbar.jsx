@@ -5,6 +5,12 @@ import { FiMenu, FiX } from "react-icons/fi";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const handleNav = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    })
+  }
 
   return (
     <nav className="fixed top-0 h-18 w-full z-50 backdrop-blur border-b bg-white border-white/10 shadow-lg">
@@ -29,17 +35,16 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center font-bold gap-15 text-2 relative right-15 text-white">
-          <NavItem to="/" label="Home" />
-          <NavItem to="/about" label="About" />
-          <NavItem to="/skills" label="Skills" />
-          <NavItem to="/projects" label="Projects" />
-          <NavItem to="/experience" label="Experience" />
-          {/* <NavItem to="/research" label="Research" /> */}
-          <NavItem to="/contact" label="Contact" />
+          <NavItem to="/" label="Home" onClick={handleNav} />
+          <NavItem to="/about" label="About" onClick={handleNav} />
+          <NavItem to="/skills" label="Skills" onClick={handleNav} />
+          <NavItem to="/projects" label="Projects" onClick={handleNav} />
+          <NavItem to="/experience" label="Experience" onClick={handleNav} />
+          <NavItem to="/contact" label="Contact" onClick={handleNav} />
 
         </ul>
 
-        
+
 
 
         <button
@@ -60,13 +65,13 @@ export default function Navbar() {
             transition={{ duration: 0.35, ease: "easeInOut" }}
             className="md:hidden mb-4 fixed inset-0 z-50 h-screen bg-black/60 backdrop-blur shadow-xl px-5 py-8 flex flex-col gap-4 mt-18 w-full text-zinc-300"
           >
-            <MobileNavItem to="/" label="Home" setOpen={setOpen} />
-            <MobileNavItem to="/about" label="About" setOpen={setOpen} />
-            <MobileNavItem to="/skills" label="Skills" setOpen={setOpen} />
-            <MobileNavItem to="/projects" label="Projects" setOpen={setOpen} />
-            <MobileNavItem to="/experience" label="Experience" setOpen={setOpen} />
+            <MobileNavItem to="/" label="Home" setOpen={setOpen} handleNav={handleNav} />
+            <MobileNavItem to="/about" label="About" setOpen={setOpen} handleNav={handleNav} />
+            <MobileNavItem to="/skills" label="Skills" setOpen={setOpen} handleNav={handleNav}/>
+            <MobileNavItem to="/projects" label="Projects" setOpen={setOpen} handleNav={handleNav} />
+            <MobileNavItem to="/experience" label="Experience" setOpen={setOpen} handleNav={handleNav} />
             {/* <MobileNavItem to="/research" label="Research" setOpen={setOpen} /> */}
-            <MobileNavItem to="/contact" label="Contact" setOpen={setOpen} />
+            <MobileNavItem to="/contact" label="Contact" setOpen={setOpen} handleNav={handleNav}/>
           </motion.ul>
         )}
       </AnimatePresence>
@@ -76,42 +81,35 @@ export default function Navbar() {
 
 function NavItem({ to, label }) {
   return (
-    // <NavLink
-    //   to={to}
-    //   className={({ isActive }) =>
-    //     `relative transition-all ease-in-out drop-shadow-[0_2px_4px_green] hover:text-primary
-    //      after:bg-primary after:w-0 after:transition-all after:duration-900
-    //      hover:after:w-full hover:text-blue-400 duration-700 hover:underline
-    //      ${isActive ? "text-primary after:w-full font-semibold" : ""}`
-    //   }
-    // >
-    //   {label}
-    // </NavLink>
 
- <NavLink
-  to={to}
-  className={({ isActive }) =>
-    `relative inline-block transition-all duration-500 ease-in-out
+
+    <NavLink
+      to={to}
+      className={({ isActive }) =>
+        `relative inline-block transition-all duration-500 ease-in-out
      text-blue-500 hover:text-blue-400 pb-1
      before:content-[''] before:absolute before:bottom-0 before:left-0
      before:h-0.75 before:w-0 before:bg-blue-500 before:transition-all before:duration-500
      hover:before:w-full
      ${isActive ? "text-blue-500 font-extrabold before:w-full" : ""}`
-  }
->
-  {label}
-</NavLink>
+      }
+    >
+      {label}
+    </NavLink>
 
 
   );
 }
 
 /* Mobile Nav Item */
-function MobileNavItem({ to, label, setOpen }) {
+function MobileNavItem({ to, label, setOpen, handleNav }) {
   return (
     <NavLink
       to={to}
-      onClick={() => setOpen(false)}
+      onClick={() => {
+        setOpen(false);
+        handleNav();
+      }}
       className={({ isActive }) =>
         `py-3 px-4 rounded-lg transition-all duration-300
          hover:bg-white/5 hover:text-primary

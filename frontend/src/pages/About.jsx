@@ -26,39 +26,60 @@ export default function About() {
   return (
     <section
       id="about"
-      className="min-h-screen px-6 md:px-20 py-22 bg-gradient-to-br bg-white relative overflow-hidden pt-32"
+      className="min-h-screen px-6 md:px-20 py-22 bg-linear-to-br bg-white relative overflow-hidden pt-32"
     >
       {/* Section Header */}
-      <motion.div
-        initial={{ opacity: 0, y: -40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-        className="text-center mb-12"
+      <div className="flex flex-col md:flex-row items-center gap-10 p-8 md:p-10 rounded-2xl border border-blue-400/20 bg-white shadow-[0_8px_35px_rgba(59,130,246,0.12)] hover:shadow-[0_8px_45px_rgba(59,130,246,0.2)] transition-all duration-500"
       >
-        <h2 className="text-4xl md:text-5xl font-bold text-blue-400 tracking-wide">
-          About Me
-        </h2>
-        <p className="text-zinc-400 mt-3 max-w-2xl mx-auto text-lg">
-          Multidisciplinary technology professional specializing in web, mobile, and full-stack development. Transforming ideas into high-performance, scalable, and user-friendly digital products.
-        </p>
-      </motion.div>
+        <div>
+          <img src="bpic.jpg" alt="Ajay Kumar Shrestha" />
+          <h1 className="text-2xl md:text-3xl font-bold text-blue-400 tracking-wide mt-5 text-center">Ajay Kumar Shrestha</h1>
+        </div>
 
-      {/* About Text */}
-      <motion.div
-        initial={{ opacity: 0, x: 60 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1.2 }}
-        viewport={{ once: true }}
-        className="text-zinc-400 text-justify mb-14 leading-relaxed space-y-4"
-      >
-        <p>
-          I , Ajay Kumar Shrestha, design and develop modern, scalable web and mobile applications that deliver seamless user experiences. From responsive frontends to secure backends, my work spans the complete development lifecycle.
-        </p>
-        <p>
-          I implement clean, maintainable code, modern authentication, payment integrations, cloud deployment, and performance optimization. My goal is to transform ideas into fully functional digital products with a focus on performance, security, and innovation.
-        </p>
-      </motion.div>
+
+        <div>
+
+          <motion.div
+            initial={{ opacity: 0, y: -40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-4xl md:text-3xl font-bold uppercase text-blue-400 tracking-wide">
+              Introduction
+            </h2>
+            <p className="text-zinc-400 mt-3 max-w-2xl mx-auto text-lg">
+             A multidisciplinary developer focused on building innovative web and mobile experiences.
+            </p>
+          </motion.div>
+
+          {/* About Text */}
+          <motion.div
+            initial={{ opacity: 0, x: 60 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.2 }}
+            viewport={{ once: true }}
+            className="text-zinc-400 text-justify mb-14 leading-relaxed space-y-4"
+          >
+            <p >
+              I , Ajay Kumar Shrestha, design and develop modern, scalable web and mobile applications that deliver seamless user experiences. From responsive frontends to secure backends, my work spans the complete development lifecycle.
+            </p>
+            <p>
+              I implement clean, maintainable code, modern authentication, payment integrations, cloud deployment, and performance optimization. My goal is to transform ideas into fully functional digital products with a focus on performance, security, and innovation.
+            </p>
+
+            <p>From frontend interfaces to secure backend systems, I bring ideas to life through technology.</p>
+          </motion.div>
+        </div>
+
+      </div>
+
+
+
+
+
+
 
       {/* Skill / Service Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
