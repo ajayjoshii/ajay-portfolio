@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 const experiences = [
   {
     period: "2018 – 2020",
-    title: "Python Developer",
+    title: "UI/UX Designer",
     description:
       "Developed backend applications, automation scripts, and data processing pipelines using Python. Worked with frameworks like Flask and Django, and implemented AI/ML models for data-driven solutions.",
   },
   {
     period: "2020 – 2024",
-    title: "Java Developer",
+    title: "Javascript Developer",
     description:
       "Designed and developed robust server-side applications using Java and Spring Boot. Focused on scalable backend systems, RESTful APIs, object-oriented programming, and enterprise-level solutions.",
   },

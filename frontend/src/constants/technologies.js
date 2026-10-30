@@ -3,12 +3,19 @@ export const technologies = [
     name: "React",
     logo: "https://cdn.simpleicons.org/react/61DAFB",
     top: "60%",
+    left: "80%",
+    orbit: "outer",
+  },
+  {
+    name: "PyCharm",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLgr09YwgjnlJ_GtZFJCMQzvYmkfOBZ8FEtnVpfG05BQ&s=10",
+    top: "60%",
     left: "90%",
     orbit: "outer",
   },
   {
     name: "HTML5",
-    logo: "https://cdn.simpleicons.org/html5/E34F26",
+    logo: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/250px-HTML5_logo_and_wordmark.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
     top: "14%",
     left: "70%",
     orbit: "outer",
@@ -20,14 +27,31 @@ export const technologies = [
     left: "40%",
     orbit: "outer",
   },
+   {
+    name: "TypeScript",
+    logo: "https://user-images.githubusercontent.com/12243763/33518868-6e2595c4-d76a-11e7-8260-31b4e8110c93.png",
+    top: "88%",
+    left: "40%",
+    orbit: "outer",
+  },
+
   {
     name: "CSS3",
-    logo: "https://cdn.simpleicons.org/css3/1572B6",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbMI-izqxMqJggqUe1G0HIonkk05TrD0L1pLCj0gvi7RaeNq7K8YtZN8o&s=10",
     top: "70%",
     left: "85%",
     orbit: "inner",
   },
+
+
   {
+    name: "Tailwind",
+    logo: "https://cdn.simpleicons.org/tailwindcss/06B6D4",
+    top: "10%",
+    left: "60%",
+    orbit: "inner",
+  },
+    {
     name: "Tailwind",
     logo: "https://cdn.simpleicons.org/tailwindcss/06B6D4",
     top: "10%",
@@ -62,6 +86,7 @@ export const technologies = [
     left: "10%",
     orbit: "outer",
   },
+
   {
     name: "GitHub",
     logo: "https://cdn.simpleicons.org/github/181717",
