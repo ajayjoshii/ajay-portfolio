@@ -95,7 +95,7 @@ export default function Contact() {
                   value={form.message}
                   onChange={handleChange}
                   required
-                  className="w-full mt-1 px-4 py-3 rounded-lg bg-white text-white border border-zinc-700 focus:border-green-400 focus:ring-1 focus:ring-green-400 outline-none resize-none"
+                  className="w-full mt-1 px-4 py-3 rounded-lg bg-white border border-zinc-700 focus:border-green-400 focus:ring-1 focus:ring-green-400 outline-none resize-none"
                 />
               </div>
 
