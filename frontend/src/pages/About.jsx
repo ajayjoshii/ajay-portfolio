@@ -33,7 +33,7 @@ export default function About() {
       >
         <div>
           <img src="bpic.jpg" alt="Ajay Kumar Shrestha" />
-          <h1 className="text-2xl md:text-3xl font-bold text-blue-400 tracking-wide mt-5 text-center">Ajay Kumar Shrestha</h1>
+          <h1 className="text-xl sm:text-3xl font-bold text-blue-400 tracking-wide mt-5 text-center">Ajay Kumar Shrestha</h1>
         </div>
 
 
@@ -46,10 +46,10 @@ export default function About() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-4xl md:text-3xl font-bold uppercase text-blue-400 tracking-wide">
+            <h2 className="text-xl sm:text-3xl font-bold uppercase text-blue-400 tracking-wide">
               Introduction
             </h2>
-            <p className="text-zinc-400 mt-3 max-w-2xl mx-auto text-lg">
+            <p className="text-zinc-400 mt-3 max-w-2xl mx-auto sm:text-lg text-sm">
              A multidisciplinary developer focused on building innovative web and mobile experiences.
             </p>
           </motion.div>

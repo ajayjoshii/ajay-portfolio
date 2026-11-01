@@ -44,58 +44,7 @@ export default function Home({
         "
       >
 
-        {/* <div className="absolute inset-0 z-0" />
-
-        <div className="absolute inset-0 z-0 pointer-events-none">
-          {[...Array(7)].map((_, i) => (
-            <motion.div
-              key={`h-${i}`}
-              className="absolute h-px w-72 sm:w-80 md:w-96 bg-gradient-to-r from-transparent via-green-400 to-transparent opacity-30"
-              style={{ top: `${12 + i * 12}%`, left: "-30%" }}
-              animate={{ x: ["0%", "160%"] }}
-              transition={{
-                duration: 10 + i,
-                repeat: Infinity,
-                ease: "linear",
-              }}
-            />
-          ))}
-
-          {[...Array(6)].map((_, i) => (
-            <motion.div
-              key={`v-${i}`}
-              className="absolute w-px h-44 sm:h-48 md:h-56 bg-gradient-to-b from-transparent via-emerald-400 to-transparent opacity-30"
-              style={{ left: `${15 + i * 14}%`, top: "-30%" }}
-              animate={{ y: ["0%", "160%"] }}
-              transition={{
-                duration: 12 + i,
-                repeat: Infinity,
-                ease: "linear",
-              }}
-            />
-          ))}
-
-          {[...Array(12)].map((_, i) => (
-            <motion.span
-              key={`n-${i}`}
-              className="absolute w-2 h-2 rounded-full bg-green-400"
-              style={{
-                top: `${10 + (i % 6) * 15}%`,
-                left: `${10 + (i % 5) * 18}%`,
-              }}
-              animate={{
-                opacity: [0.2, 0.9, 0.2],
-                scale: [1, 1.6, 1],
-              }}
-              transition={{
-                duration: 2 + (i % 3),
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-            />
-          ))}
-        </div> */}
-
+    
 
 
 
@@ -104,7 +53,7 @@ export default function Home({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="relative z-10 max-w-xl text-center md:text-left text-white"
+          className="relative z-10 max-w-xl text-center md:text-left bottom-18 sm:bottom-0 text-white"
         >
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
             <motion.span
@@ -172,10 +121,10 @@ export default function Home({
                 ease: "easeInOut",
               },
             }}
-            className="mt-8 sm:mt-10 flex flex-col text-center items-center md:flex-row mb-10 gap-4 justify-center md:justify-start">
+            className="mt-8 sm:mt-10 flex text-center items-center md:flex-row mb-10 gap-4 justify-center md:justify-start">
             <a href="/cv.pdf" download>
               <button
-                className="cursor-pointer group relative w-37 flex gap-1 items-center px-4 py-3 sm:px-6 sm:py-3 md:px-2 md:w-42 md:py-4 text-sm sm:text-base md:text-lg bg-green-600 text-[#f1f1f1] rounded-2xl font-semibold shadow-xl active:shadow-inner transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(34,197,94,0.6)]"
+                className="cursor-pointer group relative w-37 flex gap-1 items-center px-4 py-3 sm:px-6 sm:py-3 md:px-2 md:w-42 md:py-3 text-sm sm:text-base md:text-lg bg-green-600 text-[#f1f1f1] font-semibold shadow-xl active:shadow-inner transition-all duration-700 rounded-sm hover:scale-105 hover:shadow-[0_0_20px_rgba(34,197,94,0.6)]"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -200,78 +149,17 @@ export default function Home({
               </button>
             </a>
 
-            <Link to="/contact">
+            <Link to="/projects">
               <button
-                className="cursor-pointer group relative flex gap-2 items-center px-9 w-38 md:w-40 py-4 sm:px-6 sm:py-3 md:px-8 md:py-4 text-sm sm:text-base md:text-lg bg-white text-black text-[#f1f1f1] rounded-2xl font-semibold shadow-xl active:shadow-inner transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(34,197,94,0.6)]"
+                className="cursor-pointer rounded-sm group relative flex gap-2 items-center px-9 w-40 md:w-45 py-3 sm:px-6 sm:py-3 md:px-8 md:py-3 text-sm sm:text-base md:text-lg bg-white text-gray-900   font-semibold shadow-xl active:shadow-inner transition-all duration-700 hover:scale-105 hover:shadow-[0_0_20px_rgba(34,197,94,0.6)]"
               >
-                Contact Us
+                View Projects
               </button>
             </Link>
           </motion.div>
         </motion.div>
 
-        {/* ============ PROFILE IMAGE ============ */}
-        {/* <motion.img
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ scale: [1, 1.01, 1], opacity: 1, x: 0 }}
-
-          src={profile}
-          alt="Ajay Kumar Shrestha"
-          className="relative z-10 w-50 h-50 bottom-4 sm:w-[250px] sm:h-[250px] md:w-[380px] md:h-[380px] md:right-6 rounded-full object-cover border-4 border-green-400"
-          transition={{ duration: 1, ease: "easeInOut" }}
-        /> */}
-
-
-        {/* 
-        <section className="flex lg:relative lg:bottom-20 w-full items-center justify-center overflow-hidden bg-linear-to-br px-2 py-10 sm:px-4">
-          
-          <div className="relative aspect-square w-full lg:max-w-170 max-w-600 shrink-0 overflow-visible">
-
-          
-            <div className="absolute lg:inset-[10%] inset-[16%] rounded-full border-2 border-dashed border-slate-300/70" />
-
-            
-            <div className="absolute lg:inset-[18%] inset-[6%] rounded-full border border-dashed border-slate-300" />
-
-         
-            <div className="absolute inset-[3%] animate-orbit">
-              {technologies.map((tech) => (
-                <div
-                  key={tech.name}
-                  className="absolute -translate-x-1/2 -translate-y-1/2"
-                  style={{
-                    top: tech.top,
-                    left: tech.left,
-                  }}
-                >
-                  <div className="animate-counter-orbit">
-                    <div className="flex lg:min-w-13 min-w-12 flex-col bg-white items-center gap-0.5 rounded-md border border-slate-300/8 p-1 shadow-sm backdrop-blur-sm transition duration-300 hover:border-sky-400 sm:min-w-15 sm:rounded-lg sm:px-2.5 sm:py-1">
-                      <img
-                        src={tech.logo}
-                        alt={tech.name}
-                        loading="lazy"
-                        className="h-4 w-4 object-contain sm:h-5 sm:w-5"
-                      />
-
-                      <span className="whitespace-nowrap text-center text-[8px] font-medium leading-tight text-black sm:text-[9px]">
-                        {tech.name}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="absolute left-1/2 top-1/2 z-10 lg:h-[50%] lg:w-[50%] h-[55%] w-[55%]  -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-full">
-              <img
-                src={image}
-                alt={name}
-                className="h-full w-full object-cover object-top"
-              />
-            </div>
-
-          </div>
-        </section> */}
+       
 
 
 
