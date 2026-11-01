@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 export default function NeonLoader({
   initials = "AK",
-  name = "AJAY KUMAR",
+  name = "AJAY KUMAR SHRESTHA",
   role = "FULL STACK DEVELOPER",
   status = "Loading portfolio content...",
   duration = 3000,

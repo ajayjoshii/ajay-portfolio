@@ -27,7 +27,7 @@ export default function App() {
       <main className="flex min-h-screen items-center justify-center p-6 bg-gray-900">
         <NeonLoader
           initials="AK"
-          name="AJAY KUMAR"
+          name="AJAY KUMAR SHRESTHA"
           role="FULL STACK DEVELOPER"
           status="Initializing experience"
           duration={3000}
