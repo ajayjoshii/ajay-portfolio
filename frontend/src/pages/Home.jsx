@@ -32,7 +32,6 @@ export default function Home({
 
   return (
     <>
-      {/* ================= HERO SECTION ================= */}
 
       <section id="image"
         className="bg-[url('/pp.png')] bg-cover
@@ -43,11 +42,6 @@ export default function Home({
           bg-zinc-800
         "
       >
-
-    
-
-
-
 
         <motion.div
           initial={{ opacity: 0 }}
@@ -124,7 +118,7 @@ export default function Home({
             className="mt-8 sm:mt-10 flex text-center items-center md:flex-row mb-10 gap-4 justify-center md:justify-start">
             <a href="/cv.pdf" download>
               <button
-                className="cursor-pointer group relative w-37 flex gap-1 items-center px-4 py-3 sm:px-6 sm:py-3 md:px-2 md:w-42 md:py-3 text-sm sm:text-base md:text-lg bg-green-600 text-[#f1f1f1] font-semibold shadow-xl active:shadow-inner transition-all duration-700 rounded-sm hover:scale-105 hover:shadow-[0_0_20px_rgba(34,197,94,0.6)]"
+                className="cursor-pointer group relative w-37 flex gap-1 items-center px-4 py-3 sm:px-6 sm:py-3 md:px-2 md:w-33 md:py-3 text-sm sm:text-base md:text-xs bg-green-600 text-[#f1f1f1] font-semibold shadow-xl active:shadow-inner transition-all duration-700 rounded-sm hover:scale-105 hover:shadow-[0_0_20px_rgba(34,197,94,0.6)]"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -151,7 +145,7 @@ export default function Home({
 
             <Link to="/projects">
               <button
-                className="cursor-pointer rounded-sm group relative flex gap-2 items-center px-9 w-40 md:w-45 py-3 sm:px-6 sm:py-3 md:px-8 md:py-3 text-sm sm:text-base md:text-lg bg-white text-gray-900   font-semibold shadow-xl active:shadow-inner transition-all duration-700 hover:scale-105 hover:shadow-[0_0_20px_rgba(34,197,94,0.6)]"
+                className="cursor-pointer rounded-sm group relative flex gap-2 items-center px-9 w-40 md:w-30 py-3 sm:px-6 sm:py-3 md:px-4 md:py-3 text-sm sm:text-base md:text-xs bg-white text-gray-900   font-semibold shadow-xl active:shadow-inner transition-all duration-700 hover:scale-105 hover:shadow-[0_0_20px_rgba(34,197,94,0.6)]"
               >
                 View Projects
               </button>
@@ -164,7 +158,7 @@ export default function Home({
 
 
         <section className="flex lg:relative lg:bottom-20 w-full items-center justify-center overflow-hidden bg-linear-to-br px-2 py-10 sm:px-4">
-          <div className="relative aspect-square w-full lg:max-w-170 max-w-600 shrink-0 overflow-visible">
+          <div className="relative aspect-square w-full top-10 lg:max-w-170 max-w-600 shrink-0 overflow-visible">
 
             {/* Outer dashed border */}
             <div className="absolute lg:inset-[10%] inset-[16%] rounded-full border-2 border-dashed border-slate-300/70" />
