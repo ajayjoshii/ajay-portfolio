@@ -35,7 +35,7 @@ export default function Home({
 
       <section id="image"
         className="bg-[url('/pp.png')] bg-cover
-          relative min-h-screen overflow-hidden
+          relative sm:min-h-screen overflow-hidden
           flex flex-col-reverse md:flex-row
           items-center justify-between z-20
           px-6 sm:px-10 md:px-20 pt-28 sm:pt-20 gap-10 mb-0
@@ -47,7 +47,7 @@ export default function Home({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="relative z-10 max-w-xl text-center md:text-left bottom-18 sm:bottom-0 text-white"
+          className="relative z-10 max-w-xl text-center md:text-left bottom-65 sm:bottom-0 text-white"
         >
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
             <motion.span
@@ -158,60 +158,13 @@ export default function Home({
 
 
         <section className="flex lg:relative lg:bottom-20 w-full items-center justify-center overflow-hidden bg-linear-to-br px-2 py-10 sm:px-4">
+
+
           <div className="relative aspect-square w-full top-10 lg:max-w-170 max-w-600 shrink-0 overflow-visible">
 
-            {/* Outer dashed border */}
-            <div className="absolute lg:inset-[10%] inset-[16%] rounded-full border-2 border-dashed border-slate-300/70" />
-
-            {/* Inner dashed border */}
-            <div className="absolute lg:inset-[18%] inset-[6%] rounded-full border border-dashed border-slate-300" />
-
-            {/* Technology logos with independent orbit speeds */}
-            {technologies.map((tech) => {
-              const isOuter = tech.orbit === "outer";
-
-              return (
-                <div
-                  key={tech.name}
-                  className={`absolute inset-0 ${isOuter ? "animate-outer-orbit" : "animate-inner-orbit"
-                    }`}
-                >
-                  {/* Position each logo on its orbit */}
-                  <div
-                    className="absolute -translate-x-1/2 -translate-y-1/2"
-                    style={{
-                      top: tech.top,
-                      left: tech.left,
-                    }}
-                  >
-                    {/* Counter-rotate to keep logo upright */}
-                    <div
-                      className={
-                        isOuter
-                          ? "animate-counter-outer"
-                          : "animate-counter-inner"
-                      }
-                    >
-                      <div className="flex lg:min-w-13 min-w-12 flex-col items-center gap-0.5 rounded-md border border-slate-300/20 bg-white p-1 shadow-sm backdrop-blur-sm transition duration-300 hover:border-sky-400 sm:min-w-15 sm:rounded-lg sm:px-2.5 sm:py-1">
-                        <img
-                          src={tech.logo}
-                          alt={tech.name}
-                          loading="lazy"
-                          className="h-4 w-4 object-contain sm:h-5 sm:w-5"
-                        />
-
-                        <span className="whitespace-nowrap text-center text-[8px] font-medium leading-tight text-black sm:text-[9px]">
-                          {tech.name}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-
+          
             {/* Center profile image */}
-            <div className="absolute left-1/2 top-1/2 z-10 lg:h-[50%] lg:w-[50%] h-[55%] w-[55%] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-full">
+            <div className="absolute left-1/2 sm:top-1/2 top-10 z-10 lg:h-[65%] lg:w-[65%] h-[55%] w-[55%] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-full">
               <img
                 src={image}
                 alt={name}
