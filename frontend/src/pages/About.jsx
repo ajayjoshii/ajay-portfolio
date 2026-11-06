@@ -26,7 +26,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="min-h-screen px-6 md:px-20 py-22 bg-linear-to-br bg-white relative overflow-hidden pt-32"
+      className=" min-h-screen px-6 md:px-20 py-22 bg-linear-to-br bg-white relative overflow-hidden top-4"
     >
       {/* Section Header */}
       <div className="flex flex-col md:flex-row items-center gap-10 p-8 md:p-10 rounded-2xl border border-blue-400/20 bg-white shadow-[0_8px_35px_rgba(59,130,246,0.12)] hover:shadow-[0_8px_45px_rgba(59,130,246,0.2)] transition-all duration-500"

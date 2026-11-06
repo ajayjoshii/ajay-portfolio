@@ -18,8 +18,30 @@ body,
   margin: 0;
 }
 
+.professional-text {
+  transition: all 0.4s ease;
+}
+
+.professional-text:hover {
+  color: #45474a;
+  text-shadow:
+    0 0 8px rgba(139, 92, 246, 0.5),
+    0 0 18px rgba(15, 144, 163, 0.3);
+}
+
 body {
   font-family: Inter, ui-sans-serif, system-ui, sans-serif;
 }
 
+@keyframes floatIcon {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
 
+.float-icon {
+  animation: floatIcon 3s ease-in-out infinite;
+}
