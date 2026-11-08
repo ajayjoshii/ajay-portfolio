@@ -118,7 +118,7 @@ export default function Home({
               },
             }}
             className="text-justify leading-[1.9]
-    text-sm sm:text-base md:text-lg
+    text-sm sm:text-base md:text-lg p-4 sm:p-0
     
     tracking-wide
     text-gray-400

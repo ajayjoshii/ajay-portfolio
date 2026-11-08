@@ -11,6 +11,7 @@ import ScrollToTop from './components/Scroll'
 import Research from './pages/Research'
 import NeonLoader from './components/NeonLoader'
 import { useEffect, useState } from 'react'
+import WhatsAppChat from './components/WhatsAppChat'
 export default function App() {
   const [loading, setLoading] = useState(true);
 
@@ -53,6 +54,8 @@ export default function App() {
         <Route path="/research" element={<Research />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+
+      <WhatsAppChat/>
 
       <Footer />
     </>
