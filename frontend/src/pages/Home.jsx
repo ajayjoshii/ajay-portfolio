@@ -46,7 +46,7 @@ export default function Home({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="relative z-10 max-w-2xl text-center md:text-left bottom-65 sm:bottom-0 text-white"
+          className="relative z-10 max-w-2xl h-87 sm:min-h-screen text-center md:text-left bottom-65 sm:bottom-0 text-white"
         >
           <h1 className="text-3xl sm:text-3xl md:text-4xl font-bold leading-tight pt-18 sm:pt-6">
             <motion.span
@@ -151,7 +151,7 @@ export default function Home({
             className="mt-8 sm:m-17 flex text-center relative sm:left-18 sm:bottom-10  items-center md:flex-row  gap-4 justify-center md:justify-start">
             <a href="/cv.pdf" download>
               <button
-                className="cursor-pointer group text-center relative w-40 flex gap-1 items-center px-4 py-3 sm:px-6 sm:py-3 md:px-4 md:w-40 md:py-3 text-sm sm:text-base md:text-xs bg-green-600 text-[#f1f1f1] font-semibold shadow-xl active:shadow-inner transition-all duration-700 rounded-sm hover:scale-105 hover:shadow-[0_0_20px_rgba(34,197,94,0.6)]"
+                className="cursor-pointer group text-center relative w-37 flex gap-1 items-center px-4 py-3 sm:px-6 sm:py-3 md:px-4 md:w-40 md:py-3 text-sm sm:text-base md:text-xs bg-green-600 text-[#f1f1f1] font-semibold shadow-xl active:shadow-inner transition-all duration-700 rounded-sm hover:scale-105 hover:shadow-[0_0_20px_rgba(34,197,94,0.6)]"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -178,7 +178,7 @@ export default function Home({
 
             <Link to="/projects">
               <button
-                className="cursor-pointer rounded-sm group relative flex gap-2 items-center px-4 w-44 md:w-40 py-2 sm:px-6 sm:py-3 md:px-4 md:py-3 border border-gray-300 text-sm sm:text-base md:text-xs bg-white text-gray-900   font-semibold shadow-xl active:shadow-inner transition-all duration-700 hover:scale-105 hover:shadow-[0_0_20px_rgba(34,197,94,0.6)]"
+                className="cursor-pointer rounded-sm group relative flex gap-2 items-center px-4 w-40 md:w-40 py-4 sm:px-6 sm:py-3 md:px-4 md:py-3 border border-gray-300 text-sm sm:text-base md:text-xs bg-white text-gray-900   font-semibold shadow-xl active:shadow-inner transition-all duration-700 hover:scale-105 hover:shadow-[0_0_20px_rgba(34,197,94,0.6)]"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -210,7 +210,7 @@ export default function Home({
 
 
           {/* Social Icons Row */}
-          <div className="relative mt-8 sm:right-20 sm:bottom-18 text-center flex items-center justify-center gap-5 sm:gap-7">
+          <div className="relative mt-8 sm:right-10 sm:bottom-18 text-center flex items-center justify-center gap-5 sm:gap-7">
 
             {/* Facebook */}
             <motion.a
@@ -316,14 +316,14 @@ export default function Home({
 
             {/* Background glow */}
             <div className="absolute inset-[8%] rounded-[30%] 
-      bg-purple-600/20 blur-[70px]" />
+      bg-white blur-[70px]" />
 
             {/* Neon border */}
             <div className="absolute left-1/2 top-1/2 z-[1]
       h-[72%] w-[72%] -translate-x-1/2 -translate-y-1/2
       rounded-[28%] border-[3px] border-transparent
       bg-gradient-to-br from-purple-500 via-blue-400 to-cyan-400
-      shadow-[0_0_20px_#8b5cf6,0_0_45px_#2563eb,0_0_80px_#06b6d4]">
+      shadow-[0_0_10px_#8b5cf6,0_0_15px_#2563eb,0_0_30px_#06b6d4]">
 
               {/* Inner background */}
               <div className="absolute inset-[3px] overflow-hidden 

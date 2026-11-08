@@ -26,10 +26,10 @@ export default function About() {
   return (
     <section
       id="about"
-      className=" min-h-screen px-6 md:px-20 py-22 bg-linear-to-br bg-white relative overflow-hidden top-4"
+      className="flex flex-col items-center justify-center min-h-screen px-2 md:px-20 py-2 bg-linear-to-br bg-white overflow-hidden relative top-22"
     >
       {/* Section Header */}
-      <div className="flex flex-col md:flex-row items-center gap-10 p-8 md:p-10 rounded-2xl border border-blue-400/20 bg-white shadow-[0_8px_35px_rgba(59,130,246,0.12)] hover:shadow-[0_8px_45px_rgba(59,130,246,0.2)] transition-all duration-500"
+      <div className="flex flex-col md:flex-row items-center justify-center gap-4 p-8 md:p-10 rounded-2xl border border-blue-400/20 bg-white shadow-[0_8px_35px_rgba(59,130,246,0.12)] hover:shadow-[0_8px_45px_rgba(59,130,246,0.2)] transition-all duration-500"
       >
         <div>
           <img src="bpic.jpg" alt="Ajay Kumar Shrestha" />
@@ -82,7 +82,7 @@ export default function About() {
 
 
       {/* Skill / Service Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:mt-10 sm:mb-10">
         {[
           {
             icon: <FaLaptopCode className="text-blue-400 text-3xl mb-3" />,
@@ -117,12 +117,12 @@ export default function About() {
         ].map((card, index) => (
           <motion.div
             key={index}
-            className="bg-white rounded-xl p-6 border border-emerald-500/20 shadow-lg shadow-emerald-400/10 hover:shadow-emerald-400/40 cursor-pointer hover:scale-105 transition-all duration-700 ease-in-out"
+            className="bg-white rounded-xl p-6 mx-3 border border-emerald-500/20 shadow-lg shadow-emerald-400/10 hover:shadow-emerald-400/40 cursor-pointer hover:scale-102 transition-all duration-700 ease-in-out"
             initial="offscreen"
             whileInView="onscreen"
             viewport={{ once: true, amount: 0.3 }}
             variants={cardVariants}
-            whileHover={{ y: -5 }}
+            whileHover={{ y: -1 }}
           >
             {card.icon}
             <h4 className="font-bold text-xl mb-2 text-white">{card.title}</h4>
