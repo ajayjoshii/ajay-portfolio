@@ -46,7 +46,7 @@ export default function Home({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="relative z-10 max-w-2xl h-87 sm:min-h-screen text-center md:text-left bottom-65 sm:bottom-0 text-white"
+          className="relative z-10 max-w-2xl h-92 sm:min-h-screen text-center md:text-left bottom-65 sm:bottom-0 text-white"
         >
           <h1 className="text-3xl sm:text-3xl md:text-4xl font-bold leading-tight pt-18 sm:pt-6">
             <motion.span
